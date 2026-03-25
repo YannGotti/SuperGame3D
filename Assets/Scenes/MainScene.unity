@@ -853,6 +853,10 @@ PrefabInstance:
         'CC_Base_BoneRoot'\n\tTransform 'CC_Base_FacialBone'\n\tand more ...\n\tFrom
         animation clip 'HUM_Locomotion_Idle_B'\n\tFrom animation clip 'HUM_Locomotion_Idle_B'"
       objectReference: {fileID: 0}
+    - target: {fileID: 1279610492815646569, guid: 5be110722691f224c8c48fa5ac09b897, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1366688193}
     - target: {fileID: 1887641041488393086, guid: 5be110722691f224c8c48fa5ac09b897, type: 3}
       propertyPath: m_Camera
       value: 
@@ -2991,6 +2995,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
+--- !u!114 &906652174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3192697906774221714, guid: 5be110722691f224c8c48fa5ac09b897, type: 3}
+  m_PrefabInstance: {fileID: 622347028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233b17e46df075a44a7ed9d900ebc744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputController
+--- !u!4 &906652179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6569647451514172641, guid: 5be110722691f224c8c48fa5ac09b897, type: 3}
+  m_PrefabInstance: {fileID: 622347028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &910169808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,6 +3709,7 @@ GameObject:
   - component: {fileID: 1366688192}
   - component: {fileID: 1366688191}
   - component: {fileID: 1366688194}
+  - component: {fileID: 1366688195}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3814,6 +3835,27 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1366688195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366688190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975f192969acd7846a40a46a26ca5205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThirdPersonCameraController
+  target: {fileID: 906652179}
+  inputController: {fileID: 906652174}
+  targetOffset: {x: 0, y: 1.6, z: 0}
+  distance: 1
+  followSmooth: 12
+  lookSensitivity: 0.12
+  minPitch: -25
+  maxPitch: 60
+  lockCursorOnStart: 1
 --- !u!1 &1494497492
 GameObject:
   m_ObjectHideFlags: 0
