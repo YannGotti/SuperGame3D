@@ -1050,6 +1050,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: person_02
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1720ba12c2fac2f408a1a8f0ea9c9f65, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1129,6 +1137,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8275988580657459134}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 526685204769084491}
     - targetCorrespondingSourceObject: {fileID: 8304175215116285622, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2308432058603300505}
@@ -1136,6 +1147,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8669615960112906216}
   m_SourcePrefab: {fileID: 100100000, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
+--- !u!95 &994239265777954459 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
+  m_PrefabInstance: {fileID: 6676211453070938890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!137 &1493353961000350135 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5197118176682910397, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}
@@ -2747,7 +2763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022cc3bbbd3a2d6498abe914ed7873ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveController
-  speed: 15
+  speed: 1
 --- !u!114 &8275988580657459134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,6 +2778,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   _inputController: {fileID: 3192697906774221714}
   _moveController: {fileID: 1279610492815646569}
+--- !u!114 &526685204769084491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793813988609175131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69422b08cd5b3b74ba2441dc3835c4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
+  animator: {fileID: 994239265777954459}
+  moveController: {fileID: 1279610492815646569}
 --- !u!4 &5821973404293324177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 895485179724615323, guid: 9c941490cf67ee848bca25966ec4981c, type: 3}

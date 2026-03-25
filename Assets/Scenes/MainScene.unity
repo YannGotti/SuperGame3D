@@ -843,6 +843,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 994239265777954459, guid: 5be110722691f224c8c48fa5ac09b897, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'CC_Base_BoneRoot'\n\tTransform 'CC_Base_FacialBone'\n\tTransform
+        'CC_Base_NeckTwist02'\n\tTransform 'CC_Base_Pelvis'\n\tTransform 'CC_Base_BoneRoot'\n\tTransform
+        'CC_Base_NeckTwist02'\n\tTransform 'CC_Base_FacialBone'\n\tTransform 'CC_Base_Pelvis'\n\tTransform
+        'CC_Base_BoneRoot'\n\tTransform 'CC_Base_FacialBone'\n\tand more ...\n\tFrom
+        animation clip 'HUM_Locomotion_Idle_B'\n\tFrom animation clip 'HUM_Locomotion_Idle_B'"
+      objectReference: {fileID: 0}
     - target: {fileID: 1887641041488393086, guid: 5be110722691f224c8c48fa5ac09b897, type: 3}
       propertyPath: m_Camera
       value: 
